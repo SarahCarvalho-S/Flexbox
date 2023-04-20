@@ -1,70 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade FlexBox</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1> ROW  </h1>
-   <h3>O eixo principal do flex container é definido para ser o mesmo que a direção do texto. Os pontos de início e término principais são iguais à direção do conteúdo.</h3>
-    <main class="container">
-     <div class="bloco-1"> 1 </div>
-     <div class="bloco-2"> 2 </div>
-     <div class="bloco-3"> 3 </div>
-    </main> 
 
-  <h1> ROW - Reverse</h1>
-   <h3>Se comporta da mesma forma que row porém os pontos de início e término serão invertidos (permutados).</h3>
-     <main class="container-reverse">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade FlexBox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <body text= "black" bgcolor= "#A9E2F3">
+  <h1 align="center"> ATIVIDADES FLEXBOX</h1>
+
+  <hr>
+  <h1 align="center">Display Flex</h1>
+
+  <h2> Row </h2>
+  <h3>O eixo principal do flex container é definido para ser o mesmo que a direção do texto. Os pontos de início e
+    término principais são iguais à direção do conteúdo.</h3>
+  <main class="container">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2> ROW - Reverse</h2>
+  <h3>Se comporta da mesma forma que row porém os pontos de início e término serão invertidos (permutados).</h3>
+  <main class="container-reverse">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2> Column </h2>
+  <h3>O eixo principal do flex container é igual ao eixo do bloco. Os pontos de início e término principais são iguais
+    aos pontos de antes e depois do modo de escrita.</h3>
+  <main class="container-column">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2> Column Reverse </h2>
+  <h3>Se comporta da mesma forma que column porém os pontos de início e término serão invertidos (permutados).</h3>
+  <main class="container-column-reverse">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+<hr>
+
+<h1 align="center"> Justify Content </h1>
+
+  <h2> Justify Center </h2>
+  <h3></h3>
+  <main class="container-justify-center">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2>Justify Flex Start</h2>
+  <h3></h3>
+  <main class="container-flexstart">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2> Justify Flex End </h2>
+  <h3></h3>
+  <main class="container-flex-end">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2> Justify Space Between </h2>
+  <h3></h3>
+  <main class="container-space-between">
+    <div class="bloco-1"> 1 </div>
+    <div class="bloco-2"> 2 </div>
+    <div class="bloco-3"> 3 </div>
+  </main>
+
+  <h2>Space Evenly</h2>
+  <h3>evenly</3>
+    <main class="container-space-evenly">
       <div class="bloco-1"> 1 </div>
       <div class="bloco-2"> 2 </div>
       <div class="bloco-3"> 3 </div>
-     </main>   
+    </main>
 
-  <h1> Column </h1>
-     <h3>O eixo principal do flex container é igual ao eixo do bloco. Os pontos de início e término principais são iguais aos pontos de antes e depois do modo de escrita.</h3>
-       <main class="container-column">
+    <h2>Space Around</h2>
+    <h3>Around</3>
+      <main class="container-space-around">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
-       </main>    
-       
-       
+      </main>
 
-   <h1> Column Reverse </h1>
-     <h3>Se comporta da mesma forma que column porém os pontos de início e término serão invertidos (permutados).</h3>
-        <main class="container-column-reverse">
-          <div class="bloco-1"> 1 </div>
-          <div class="bloco-2"> 2 </div>
-          <div class="bloco-3"> 3 </div>
-        </main>   
-        
-   <h1> Justify Center </h1>
-    <h3></h3> 
-      <main class="container-justify-center">
+      <h2> Align Items Center </h2>
+      <h3></h3>
+      <main class="container-alignitems-center">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
-      </main>    
+      </main>
 
-   <h1> Justify Space Between </h1>
-    <h3></h3> 
-      <main class="container-space-between">
-          <div class="bloco-1"> 1 </div>
-          <div class="bloco-2"> 2 </div>
-          <div class="bloco-3"> 3 </div>
-        </main> 
-        
-   <h1> Justify Center </h1>
-    <h3></h3> 
-       <main class="container-alignitems-center">
-           <div class="bloco-1"> 1 </div>
-           <div class="bloco-2"> 2 </div>
-           <div class="bloco-3"> 3 </div>
-       </main>         
+
+      <h2> Align Flex Start </h2>
+      <h3></h3>
+      <main class="container-align-flex-start">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+      </main>
+
+
+      <h2> Align Flex End </h2>
+      <h3></h3>
+      <main class="container-align-flex-end">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+      </main>
+
+      <h2> Align Items Stretch </h2>
+      <h3></h3>
+      <main class="container-alignitems-stretch">
+        <div class="bloco1-sem-altura"> 1 </div>
+        <div class="bloco2-sem-altura"> 2 </div>
+        <div class="bloco3-sem-altura"> 3 </div>
+      </main>
+
+
+      <h2> Align Items Baseline </h2>
+      <h3></h3>
+      <main class="container-alignitems-baseline">
+        <div class="bloco1-fontes-diferentes"> 1 </div>
+        <div class="bloco2-fontes-diferentes"> 2 </div>
+        <div class="bloco3-fontes-diferentes"> 3 </div>
+      </main>
+
+  <hr>
+      <h1 align="center">Flex Wrap</h1>
+
+      <h2>Now Wrap </h2>
+      <main class="container-flexwrap-nowrap">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+    
+      <h2>Wrap</h2>
+      <main class="container-flexwrap-wrap">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <h2>ROW-Reverse + Wrap Reverse</h2>
+      <main class="container-flexwrap-wrapreverse">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <h2>Flex Flow</h2>
+      <main class="container-flexflow-row-nowrap">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
 
 </body>
+
 </html>
