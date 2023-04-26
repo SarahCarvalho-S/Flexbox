@@ -1,4 +1,35 @@
-.bloco-1 {
+.menu-navegacao {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .menu-navegacao ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  .menu-navegacao li {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;   
+    
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  .menu-navegacao a:hover{
+      background-color: #b18ba8;
+  }
+
+
+
+
+  .bloco-1 {
     background-color: #69be95;
     height: 200px;
     width: 200px;
@@ -115,7 +146,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: ##CEECF5;
+    background-color: #CEECF5;
     padding: 20px;
     height: 400px;
 }
@@ -675,4 +706,74 @@
 h1{
     color: #0B4C5F;
     background-color: #CEECF5;
+}
+
+
+.container-content-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #CEECF5;
+    padding: 20px;
+    height: 800px;
+}
+
+
+
+.container-content-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: #CEECF5;
+    padding: 20px;
+    height: 800px;
+}
+
+
+
+.container-content-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: #CEECF5;
+    padding: 20px;
+    height: 800px;
+}
+
+
+
+.container-content-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: #CEECF5;
+    padding: 20px;
+    height: 800px;
+}
+
+
+
+
+.container-content-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: #CEECF5;
+    padding: 20px;
+    height: 800px;
 }

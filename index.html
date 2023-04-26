@@ -10,13 +10,34 @@
 </head>
 
 <body>
-  <body text= "black" bgcolor= "#A9E2F3">
+  <body text= "black" bgcolor= "#fff">
+   
+    <nav class="menu-navegacao">
+     <ul>
+      <li class="link-menu-principal"><a href="#display">display</a></li>
+      <li class="link-menu-principal"><a href="#flex-direction">flex-direction</a></li>
+      <li class="link-menu-principal"><a href="#justify-content">justify-content</a></li>
+      <li class="link-menu-principal"><a href="#align-items">align-items</a></li>
+      <li class="link-menu-principal"><a href="#flex-wrap">flex-wrap</a></li>
+      <li class="link-menu-principal"><a href="#flex-flow">flex-flow</a></li>
+      <li class="link-menu-principal"><a href="#align-content">align-content</a></li>
+     </ul>
+   </nav>
+
+
+
+
+
+
   <h1 align="center"> ATIVIDADES FLEXBOX</h1>
+    <h1 id="display" align="center"> Display Flex</h1>
+      <h3>Esta propriedade define um flex container; inline ou block dependendo dos valores passados. Coloca todos os elementos-filhos diretos num contexto Flex</h3>
 
   <hr>
-  <h1 align="center">Display Flex</h1>
+  <h1 id="flex-direction" align="center">Flex Direction</h1>
+   <h3>Estabelece o eixo principal, definindo assim a direção em que os flex items são alinhados no flex container. O Flexbox é (com exceção de um wrapping opcional) um conceito de leiaute de uma só direção. Pense nos flex items inicialmente posicionaids ou em linhas horizontais ou em colunas verticais.</h3>
 
-  <h2> Row </h2>
+  <h2>Row</h2>
   <h3>O eixo principal do flex container é definido para ser o mesmo que a direção do texto. Os pontos de início e
     término principais são iguais à direção do conteúdo.</h3>
   <main class="container">
@@ -51,10 +72,10 @@
   </main>
 <hr>
 
-<h1 align="center"> Justify Content </h1>
-
+<h1 id="justify-content" align="center"> Justify Content </h1>
+  <h3>Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Ajuda a distribuir o espaço livre que sobrar no container tanto se todos os flex items em uma linha são inflexíveis, ou são flexíveis mas já atingiram seu tamanho máximo. Também exerce algum controle sobre o alinhamento de ítens quando eles ultrapassam o limite da linha.</h3>
   <h2> Justify Center </h2>
-  <h3></h3>
+  <h3> os ítens são centralizados na linha.</h3>
   <main class="container-justify-center">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
@@ -62,7 +83,7 @@
   </main>
 
   <h2>Justify Flex Start</h2>
-  <h3></h3>
+  <h3> os ítens são alinhados junto à borda de início da direção do writing-mode(modo de escrita)<h3>
   <main class="container-flexstart">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
@@ -70,7 +91,7 @@
   </main>
 
   <h2> Justify Flex End </h2>
-  <h3></h3>
+  <h3>flex-end: os ítens são alinhados junto à borda final (end) de acordo com qual for a flex-direction do container</h3>
   <main class="container-flex-end">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
@@ -78,7 +99,7 @@
   </main>
 
   <h2> Justify Space Between </h2>
-  <h3></h3>
+  <h3>space-between: os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem junto à borda inicial da linha, o último junto à borda final da linha.</h3>
   <main class="container-space-between">
     <div class="bloco-1"> 1 </div>
     <div class="bloco-2"> 2 </div>
@@ -86,7 +107,7 @@
   </main>
 
   <h2>Space Evenly</h2>
-  <h3>evenly</3>
+  <h3> space-evenly: os ítens são distribuídos de forma que o espaçamento entre quaisquer dois itens da linha (incluindo entre os ítens e as bordas) seja igual</3>
     <main class="container-space-evenly">
       <div class="bloco-1"> 1 </div>
       <div class="bloco-2"> 2 </div>
@@ -94,15 +115,19 @@
     </main>
 
     <h2>Space Around</h2>
-    <h3>Around</3>
+    <h3>os ítens são distribuídos na linha com o mesmo espaçamento entre eles. Note que, visualmente, o espaço pode não ser igual, uma vez que todos os ítens tem a mesma quantidade de espaço dos dois lados: o primeiro item vai ter somente uma unidade de espaço junto à borda do container, mas duas unidades de espaço entre ele e o próximo ítem, pois o próximo ítem também tem seu próprio espaçamento que está sendo aplicado</3>
       <main class="container-space-around">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
       </main>
 
-      <h2> Align Items Center </h2>
-      <h3></h3>
+
+      <h1 id="align-items" align="center"> Align Items </h1>
+      <h3>Define o comportamento padrão de como flex items são alinhados de acordo com o eixo transversal (cross axis). De certa forma, funciona de forma similar ao justify-content, porém no eixo transversal (perpendicular ao eixo principal)</h3>
+
+      <h2 id="align-items"> Align Items Center </h2>
+      <h3>os ítens são centralizados na linha</h3>
       <main class="container-alignitems-center">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -111,7 +136,7 @@
 
 
       <h2> Align Flex Start </h2>
-      <h3></h3>
+      <h3>os ítens são alinhados junto à borda de início (start) de acordo com qual for a flex-direction do container</h3>
       <main class="container-align-flex-start">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -120,7 +145,7 @@
 
 
       <h2> Align Flex End </h2>
-      <h3></h3>
+      <h3>os ítens são alinhados junto à borda final (end) de acordo com qual for a flex-direction do container</h3>
       <main class="container-align-flex-end">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -128,7 +153,7 @@
       </main>
 
       <h2> Align Items Stretch </h2>
-      <h3></h3>
+      <h3>estica os ítens para preencher o container, respeitando o min-width/max-width</h3>
       <main class="container-alignitems-stretch">
         <div class="bloco1-sem-altura"> 1 </div>
         <div class="bloco2-sem-altura"> 2 </div>
@@ -137,7 +162,7 @@
 
 
       <h2> Align Items Baseline </h2>
-      <h3></h3>
+      <h3> ítens são alinhados de acordo com suas baselines</h3>
       <main class="container-alignitems-baseline">
         <div class="bloco1-fontes-diferentes"> 1 </div>
         <div class="bloco2-fontes-diferentes"> 2 </div>
@@ -145,9 +170,11 @@
       </main>
 
   <hr>
-      <h1 align="center">Flex Wrap</h1>
+      <h1 id="flex-wrap" align="center">Flex Wrap</h1>
+       <h3>Por padrão, os flex items vão todos tentar se encaixar em uma só linha. Com esta propriedade você pode modificar esse comportamento e permitir que os ítens quebrem para uma linha seguinte conforme for necessário.</h3>
 
-      <h2>Now Wrap </h2>
+      <h2> Now Wrap </h2>
+        <h3>todos os flex items ficarão em uma só linha</h3>
       <main class="container-flexwrap-nowrap">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -163,7 +190,8 @@
         <div class="bloco-3"> 12 </div>
       </main>
     
-      <h2>Wrap</h2>
+      <h2>Wrap</h2> 
+        <H3>os flex items vão quebrar em múltiplas linhas, de cima para baixo</H3>
       <main class="container-flexwrap-wrap">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -180,6 +208,7 @@
       </main>
 
       <h2>ROW-Reverse + Wrap Reverse</h2>
+       <h3> os flex items vão quebrar em múltiplas linhas de baixo para cima</h3>
       <main class="container-flexwrap-wrapreverse">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
@@ -194,9 +223,102 @@
         <div class="bloco-2"> 11 </div>
         <div class="bloco-3"> 12 </div>
       </main>
-
-      <h2>Flex Flow</h2>
+    <hr>
+      <h1 id="flex-flow" align="center">Flex Flow</h1>
+       <h3>A propriedade flex-flow é uma propriedade shorthand (uma mesma declaração inclui vários valores relacionados a mais de uma propriedade) que inclui flex-direction e flex-wrap. Determina quais serão os eixos pricipal e transversal do container. O valor padrão é row nowrap</h3>
       <main class="container-flexflow-row-nowrap">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <hr>
+       <h1 id="align-content" align="center"> Align Content</h1>
+         <h3>Para quando existe o flezwrap e queremos alinhar em nosso eixo secundário</h3>
+
+      <h2> Align Content Center  </h2>
+        <h3>ítens centralizados no container</h3>
+      <main class="container-content-center">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <h2> Align Content Flex Start  </h2>
+        <h3>alinhados com o início do container. O valor (com maior suporte dos navegadores) flex-start se guia pela flex-direction, enquanto start se guia pela direção do writing-mode</h3>
+      <main class="container-content-flex-start">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      
+      <h2> Align Content Flex End </h2>
+        <h3> ítens alinhados com o final do container. O valor (com maior suporte dos navegadores) flex-end se guia pela flex-direction, enquanto end se guia pela direção do writing-mode.
+          center: ítens centralizados no container</h3>
+      <main class="container-content-flex-end">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <h2>Align Content Space Between</h2>
+        <h3>ítens distribuídos igualmente; a primeira linha junto ao início do container e a última linha junto ao final do container.</h3>
+      <main class="container-content-space-between">
+        <div class="bloco-1"> 1 </div>
+        <div class="bloco-2"> 2 </div>
+        <div class="bloco-3"> 3 </div>
+        <div class="bloco-1"> 4 </div>
+        <div class="bloco-2"> 5 </div>
+        <div class="bloco-3"> 6 </div>
+        <div class="bloco-1"> 7 </div>
+        <div class="bloco-2"> 8 </div>
+        <div class="bloco-3"> 9 </div>
+        <div class="bloco-1"> 10 </div>
+        <div class="bloco-2"> 11 </div>
+        <div class="bloco-3"> 12 </div>
+      </main>
+
+      <h2> Align Content Space Around  </h2>
+        <h3>ítens distribuídos igualmente; a primeira linha junto ao início do container e a última linha junto ao final do container.
+          space-around: ítens distribuídos igualmente com o mesmo espaçamento entre cada linha</h3>
+      <main class="container-content-space-around">
         <div class="bloco-1"> 1 </div>
         <div class="bloco-2"> 2 </div>
         <div class="bloco-3"> 3 </div>
